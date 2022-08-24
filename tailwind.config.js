@@ -1,7 +1,10 @@
 /** @type {import('tailwindcss').Config} */
+
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   content: [
-    "./assets/**/*.{css}",
+    "./assets/**/*.css",
     "./components/*.{vue,js}",
     "./components/**/*.{vue,js}",
     "./pages/*.vue",
@@ -11,7 +14,13 @@ module.exports = {
     "./nuxt.config.{js,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        //gray: colors.neutral
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
