@@ -1,5 +1,5 @@
 <template>
-  <div class="gap-12 flex flex-col">
+  <div id="meetings" class="gap-12 flex flex-col">
     <h2 class="font-extrabold text-5xl mb-18">Meetings</h2>
 
     <div class="w-full  bg-slate-800 rounded-2xl py-6 px-8 shadow-lg shadow-2xl">
