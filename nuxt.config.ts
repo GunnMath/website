@@ -8,6 +8,18 @@ export default defineNuxtConfig({
             postcssOptions: require("./postcss.config.js"),
         },
     },
+    app : {
+        head: {
+            title: "Gunn Math Circle",
+            link: [
+                {
+                    rel:"icon",
+                    type:"img/png",
+                    href:"/gmc_logo.png"
+                }
+            ]
+        }
+    },
     modules: [
         '@nuxt/content'
       ],
